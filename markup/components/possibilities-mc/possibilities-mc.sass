@@ -1,0 +1,79 @@
+.possibilities-mc
+    padding-top: 160px
+    padding-bottom: 130px
+    @include _768
+        padding: 50px 0
+
+.possibilities-mc__container
+    overflow-x: hidden
+
+.possibilities-mc__title
+    max-width: 670px
+    width: 100%
+    margin: 0 auto 70px
+
+.possibilities-mc__content-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    //flex-wrap: wrap
+    margin-bottom: 30px
+
+.possibilities-mc__content
+    flex: 0 0 calc(50% - 15px)
+    @include _992
+        flex: 0 0 100%
+
+.possibilities-mc__content-title
+    max-width: 410px
+    margin: 0
+    margin-bottom: 10px
+
+    font-size: 24px
+    line-height: 36px
+    font-weight: bold
+
+.possibilities-mc__content-list
+    @include nl
+
+.possibilities-mc__content-item
+    font-size: 16px
+    line-height: 24px
+
+.possibilities-mc__mockup-img
+    animation: mockup 5s infinite ease-out
+    @include _1200
+        width: 50%
+    @include _992
+        display: none
+
+.possibilities-mc__list
+    @include nl
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 0 -40px
+    text-align: center
+    @include _1200
+        justify-content: flex-start
+        flex-wrap: wrap
+    @include _768
+        margin: 0 -15px
+
+.possibilities-mc__item
+    flex: 0 0 20%
+    padding: 0 40px
+    @include _1200
+        flex: 0 0 33.3333%
+    @include _768
+        padding: 0 15px
+        flex: 0 0 50%
+    @include _576
+        flex: 0 0 100%
+        margin-bottom: 35px
+        &:last-child
+            margin-bottom: 0
+
+.possibilities-mc__item-icon
+
+.possibilities-mc__item-text

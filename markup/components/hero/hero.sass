@@ -1,0 +1,148 @@
+.hero
+    padding: 35px 0 95px
+    background-image: url('%=static=%assets/hero/hero-bg.jpg')
+    @include bg-image
+    background-color: #ECF8FC
+
+.hero__container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    @include _992
+        flex-wrap: wrap
+
+    padding-top: 115px
+    @include _992
+        padding-top: 55px
+    @include _768
+        padding-top: 25px
+
+.hero__content
+    max-width: 660px
+    padding-top: 55px
+    @include _992
+        max-width: none
+        margin-bottom: 35px
+
+.hero__suptitle
+    margin: 0
+    margin-bottom: 55px
+
+    font-size: 21px
+    line-height: 26px
+    letter-spacing: 0.3em
+    text-transform: uppercase
+
+    color: #000000
+    @include _768
+        margin-bottom: 35px
+
+.hero__title
+    margin: 0
+    margin-bottom: 15px
+
+    font-size: 36px
+    line-height: 44px
+    font-weight: bold
+    color: $blue
+    @include _768
+        font-size: 28px
+        line-height: 34px
+
+.hero__description
+    max-width: 500px
+
+    margin: 0
+    margin-bottom: 30px
+
+    font-size: 21px
+    line-height: 36px
+    @include _768
+        font-size: 18px
+        line-height: 26px
+
+.hero__cta-btn
+    display: inline-block
+    padding: 16px 42px
+
+    font-size: 21px
+    line-height: 36px
+    font-weight: bold
+    text-decoration: none
+    color: #fff
+
+    border-radius: 60px
+    background-color: $green
+    transition-duration: 0.6s
+    &:hover
+        transform: translateY(-3px)
+
+.hero__advantages-list
+    @include nl
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 95px
+    @include _768
+        margin-top: 45px
+
+.hero__advantages-item
+    position: relative
+    flex: 0 0 50%
+    margin-bottom: 25px
+    padding-left: 100px
+
+    font-size: 18px
+    line-height: 27px
+
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 68px
+        height: 53px
+
+        background-image: url("data:image/svg+xml,%3Csvg width='68' height='53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.53 53c.529 0 1.058 0 1.588-.536L67.47 14.379c.529-.537.529-1.073.529-1.61V2.041c0-1.61-2.118-2.682-3.706-1.61L24.588 35.836c-.53.536-1.059.536-1.588.536V53h.53z' fill='%234BA7FA'/%3E%3Cpath d='M21.954 52.472C22.477 53 22.477 53 23 53V36.645c-.523 0-1.046 0-1.046-.528L3.136 19.762C2.091 18.18 0 19.235 0 21.345v10.552c0 .527 0 1.055.523 1.582l21.431 18.993z' fill='%231D79DD'/%3E%3C/svg%3E");
+        background-repeat: no-repeat
+    &:last-child
+        margin-bottom: 0
+        flex: 0 0 80%
+    @include _768
+        flex: 0 0 100%
+        margin-bottom: 40px
+        &:last-child
+            flex: 0 0 100%
+
+.hero__img-wrapper
+    position: relative
+
+.hero__img
+    display: block
+    width: 100%
+    height: auto
+    @include _992
+        display: none
+
+.hero__apps
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    position: absolute
+    bottom: 0
+    right: 0
+    @include _992
+        position: static
+        flex-direction: row
+
+.hero__apps-link
+    margin-bottom: 10px
+    font-size: 0
+    &:last-child
+        margin-bottom: 0
+    @include _992
+        margin-bottom: 0
+        &:first-child
+            margin-right: 10px
+
+.hero__apps-img

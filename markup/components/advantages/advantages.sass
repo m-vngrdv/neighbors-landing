@@ -1,0 +1,48 @@
+.advantages
+    padding: 160px 0
+    @include _992
+        padding: 80px 0
+    @include _768
+        padding: 40px 0
+
+.advantages__container
+
+.advantages__title
+    max-width: 460px
+    margin: 0 auto 85px
+
+.advantages__list
+    @include nl
+    display: flex
+    justify-content: space-between
+    @include _992
+        flex-wrap: wrap
+        justify-content: center
+
+.advantages__item
+    padding: 0 15px
+    flex: 0 0 33.3333%
+    text-align: center
+    @include _992
+        flex: 0 0 50%
+        margin-bottom: 35px
+        &:last-child
+            margin-bottom: 0
+    @include _768
+        flex: 0 0 100%
+
+.advantages__icon
+    display: inline-block
+    margin-bottom: 45px
+
+.advantages__name
+    max-width: 215px
+    margin: 0 auto 15px
+    font-size: 21px
+    line-height: 30px
+    font-weight: bold
+
+.advantages__description
+    margin: 0
+    font-size: 16px
+    line-height: 24px

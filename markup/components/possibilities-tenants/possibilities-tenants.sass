@@ -1,0 +1,122 @@
+
+.possibilities-tenants
+    padding: 150px 0
+
+.possibilities-tenants__container
+    max-width: 1630px
+    @include _1200
+        max-width: 1170px
+
+.possibilities-tenants__title
+    max-width: 600px
+    width: 100%
+    margin: 0 auto 80px
+
+.possibilities-tenants__content-wrapper
+    display: flex
+    align-items: flex-start
+    margin-bottom: 50px
+    &:last-child
+        margin-bottom: 0
+    @include _992
+        flex-wrap: wrap
+
+.possibilities-tenants__content-wrapper--left
+    justify-content: flex-start
+
+.possibilities-tenants__content-wrapper--right
+    justify-content: flex-end
+
+.possibilities-tenants__img-wrapper
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 70px
+        width: 370px
+        height: 370px
+        border-radius: 50%
+        @include _1200
+            top: 50%
+            width: 300px
+            height: 300px
+        @include _992
+            display: none
+
+.possibilities-tenants__img-wrapper--green
+    margin-right: 30px
+    &::after
+        right: 0
+        background-color: $green
+        @include _1200
+            right: 50%
+            transform: translate(50%, -50%)
+
+.possibilities-tenants__img-wrapper--blue
+    margin-left: 30px
+    &::after
+        left: 0
+        background-color: $blue
+        @include _1200
+            left: 50%
+            transform: translate(-50%, -50%)
+
+.possibilities-tenants__content-img
+    position: relative
+    z-index: 2
+    animation: mockup 5s infinite ease-out
+    @include _1200
+        display: block
+        width: 100%
+        min-width: 300px
+        height: auto
+    @include _992
+        display: none
+
+.possibilities-tenants__content
+    max-width: 770px
+    @include _992
+        max-width: none
+
+.possibilities-tenants__content--padding
+    padding-top: 65px
+    @include _992
+        padding-top: 0
+
+.possibilities-tenants__content-item
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 55px
+    &:last-child
+        margin-bottom: 0
+    @include _576
+        flex-wrap: wrap
+        margin-bottom: 75px
+
+.possibilities-tenants__content-icon
+    margin-right: 30px
+    @include _992
+        margin-right: 0
+    @include _576
+        margin-bottom: 30px
+
+.possibilities-tenants__content-block
+    @include _992
+        flex: 0 0 calc(100% - 200px)
+    @include _576
+        flex: 0 0 100%
+
+.possibilities-tenants__content-name
+    margin: 0
+    margin-bottom: 10px
+    font-size: 24px
+    line-height: 29px
+    font-weight: bold
+
+.possibilities-tenants__content-list
+    @include nl
+
+.possibilities-tenants__content-description
+    font-size: 16px
+    line-height: 24px

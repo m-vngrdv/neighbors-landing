@@ -1,0 +1,42 @@
+<section class="hero">
+    {{>header/header}}
+
+    <div class="hero__container container">
+        <div class="hero__content">
+            {{#if suptitle}}
+            <p class="hero__suptitle">{{suptitle}}</p>
+            {{/if}}
+            <h1 class="hero__title">{{title}}</h1>
+            <p class="hero__description">{{description}}</p>
+
+            <a href="#feedback-request" class="hero__cta-btn">Подключить</a>
+            {{#if index}}
+            <ul class="hero__advantages-list">
+                <li class="hero__advantages-item">Более широкий функционал</li>
+                <li class="hero__advantages-item">Опции для решения любых вопросов жильцов</li>
+                <li class="hero__advantages-item">Оперативное взаимодействие всех соседей с сервисами и представителями
+                    УК в одном месте</li>
+                {{/if}}
+            </ul>
+        </div>
+        <div class="hero__img-wrapper">
+            {{#if tenants}}
+            <img src="%=static=%img/assets/hero/hero-tenants-img.png" alt="Скачать приложение" class="hero__img">
+            {{else if mc}}
+            <img src="%=static=%img/assets/hero/hero-mc-img.png" alt="Скачать приложение" class="hero__img">
+            {{else}}
+            <img src="%=static=%img/assets/hero/hero-img.png" alt="Скачать приложение" class="hero__img">
+            {{/if}}
+            <div class="hero__apps">
+                <a href="#" class="hero__apps-link" aria-label="Скачать приложение в AppStore"
+                    title="Скачать приложение в AppStore">
+                    <img src="%=static=%img/general/app-store.svg" alt="AppStore" class="hero__apps-img">
+                </a>
+                <a href="#" class="hero__apps-link" aria-label="Скачать приложение в Google Play"
+                    title="Скачать приложение в Google Play">
+                    <img src="%=static=%img/general/google-play.svg" alt="Google Play" class="hero__apps-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

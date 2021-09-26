@@ -1,0 +1,87 @@
+.possibilities
+    padding-top: 160px
+    @include _992
+        padding-top: 80px
+    @include _992
+        padding-top: 40px
+
+.possibilities__container
+    overflow-x: hidden
+
+.possibilities__title
+
+.section-title
+
+.possibilities__wrapper
+    display: flex
+    justify-content: space-between
+    margin: 0 -15px
+    @include _992
+        flex-wrap: wrap
+        margin: 0
+    @include _768
+        margin: 0
+
+.possibilities__card-wrapper
+    flex: 0 0 50%
+    padding: 0 15px
+    @include _768
+        flex: 0 0 100%
+        width: 100%
+        padding: 0
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+
+.possibilities__card
+    height: 100%
+    border-radius: 30px
+    overflow: hidden
+    cursor: pointer
+    &:hover
+        .possibilities__body
+            background-color: $blue
+            color: #fff
+        .possibilities__more
+            background-color: $light-green
+            color: #fff
+
+.possibilities__cover
+    display: block
+    width: 100%
+    height: auto
+
+.possibilities__body
+    height: 100%
+    padding: 30px 50px 60px
+    background-color: #F6F6F6
+    @include _768
+        padding: 30px 30px 40px
+
+.possibilities__name
+    margin: 0
+    margin-bottom: 10px
+    font-size: 24px
+    line-height: 29px
+    font-weight: bold
+
+.possibilities__list
+    @include nl
+    margin-bottom: 20px
+
+.possibilities__more
+    display: inline-block
+    padding: 15px 45px
+    font-size: 21px
+    line-height: 36px
+    text-decoration: none
+    color: #000
+    border: 1px solid $green
+    border-radius: 60px
+    transition: transform ease-out 0.5s
+    &:hover
+        transform: translateY(-3px)
+    @include _768
+        padding: 15px 30px
+        font-size: 18px
+        line-height: 28px

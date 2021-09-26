@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head head.defaults}}
+</head>
+
+<body class="page">
+    {{>hero/hero 
+        title="Удобное взаимодействие между соседями и доступной инфраструктурой"
+        description="Получите доступ ко всем сервисам поселка в одном приложении"
+        index="true"
+    }}
+    {{>possibilities/possibilities}}
+    {{>advantages/advantages}}
+    {{>how-to-use/how-to-use}}
+    {{>feedback-request/feedback-request}}
+    {{>footer/footer}}
+
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>

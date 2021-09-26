@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head head.defaults}}
+</head>
+
+<body class="page">
+    {{>hero/hero
+        suptitle="ЖИЛЬЦАМ"
+        title="Решайте домашние вопросы прямо в смартфоне"
+        description="Приложение для IOS и Android, в котором вы взаимодействуете с соседями и управляете инфраструктурой вашего дома"
+        tenants="true"
+    }}
+
+    {{>possibilities-tenants/possibilities-tenants}}
+
+    {{>how-to-use/how-to-use bgImageClass="how-to-use--tenants"}}
+    {{>feedback-request/feedback-request}}
+    {{>footer/footer}}
+
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>

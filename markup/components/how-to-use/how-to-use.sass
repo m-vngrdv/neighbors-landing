@@ -1,0 +1,53 @@
+.how-to-use
+    padding: 150px 0 215px
+    background-image: url('%=static=%assets/how-to-use/how-to-use-bg.jpg')
+    @include bg-image
+    background-color: $blue
+    @include _992
+        padding: 75px 0 110px
+    @include _768
+        padding: 50px 0
+.how-to-use--tenants
+    background-image: url('%=static=%assets/how-to-use/how-to-use-tenants-bg.jpg')
+    @include bg-image
+.how-to-use--mc
+    background-image: none
+    overflow: hidden
+    .how-to-use__container
+        position: relative
+        &::after,
+        &::before
+            content: ""
+            position: absolute
+            background-repeat: no-repeat
+            z-index: 0
+            @include _768
+                display: none
+        &::after
+            top: 90px
+            left: -137px
+            width: 308px
+            height: 438px
+            background-image: url('%=static=%/assets/how-to-use/how-to-use-mc-left.svg')
+            @include _1200
+                left: -100px
+        &::before
+            top: 90px
+            right: -164px
+            width: 335px
+            height: 450px
+            background-image: url('%=static=%/assets/how-to-use/how-to-use-mc-right.svg')
+            @include _1200
+                right: -100px
+.how-to-use__container
+
+.how-to-use__title
+
+.how-to-use__video
+    position: relative
+    display: block
+    max-width: 715px
+    width: 100%
+    height: 400px
+    margin: 0 auto
+    z-index: 2

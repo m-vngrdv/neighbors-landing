@@ -1,0 +1,66 @@
+.header
+
+.header__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+.header__logo
+    text-decoration: none
+
+.header__icon
+    display: inline-block
+    margin-right: 15px
+    vertical-align: middle
+    @include _992
+        margin-right: 0
+
+.header__title
+    font-size: 27px
+    font-weight: bold
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    vertical-align: middle
+    color: $blue
+    @include _992
+        display: none
+
+.header__nav
+    @include _768
+        display: none
+.header__nav-list
+    @include nl
+    display: flex
+
+.header__nav-item
+    padding: 0 15px
+
+.header__nav-link,
+.header__contacts-link
+    font-size: 18px
+    line-height: 22px
+    text-decoration: none
+    color: #000000
+    transition-duration: 0.3s
+    &:hover
+        color: $blue
+
+.header__nav-link
+
+.header__nav-link--active
+    color: $blue
+
+.header__contacts
+
+.header__contacts-link
+    margin-right: 30px
+    font-weight: bold
+    &:last-child
+        margin-right: 0
+    @include _1200
+        display: block
+        margin-right: 0
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0

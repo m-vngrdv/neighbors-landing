@@ -1,0 +1,68 @@
+.footer
+    padding: 65px 0
+    background-color: $blue
+    @include _768
+        padding: 35px 0
+
+.footer__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+.footer__logo
+    text-decoration: none
+
+.footer__icon
+    display: inline-block
+    margin-right: 15px
+    vertical-align: middle
+
+.footer__title
+    font-size: 27px
+    font-weight: bold
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    vertical-align: middle
+    color: #fff
+    @include _992
+        display: none
+
+.footer__copyright
+    margin: 0
+    padding: 0 15px
+    color: #fff
+    @include _768
+        order: 3
+        margin-top: 30px
+        padding: 0
+        width: 100%
+        text-align: center
+
+.footer__nav
+    @include _768
+        order: 2
+    @include _576
+        width: 100%
+        margin-top: 20px
+
+.footer__nav-list
+    @include nl
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+
+.footer__nav-item
+    padding: 0 15px
+    @include _576
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+
+.footer__nav-link
+    text-decoration: none
+    color: #fff
+
+    transition-duration: 0.3s
+    &:hover
+        color: #000
